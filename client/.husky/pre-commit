@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cd client/
+echo '👨🏼‍🚒 Styling, testing and building project before commit'
+
+# Check typings
+npm run check-types ||
+(
+    echo '👹❌❌👹❌ Failed type check... 🤢❌🤡❌ Please make required changes!!'
+    false;
+)
+
+# Check Prettier standards
+npm run check-format ||
+(
+    echo '🤢❌🤢 Prettier check failed... 🤢❌🤡 Run npm run format, add changes and try again😊'
+    false;
+)
+
+# Check Eslint standards
+npm run check-lint ||
+(
+    echo '😤❌ Eslint check failed... 😤❌🤡 Please make required changes, add changes and try again😊'
+    false;
+)
+
+echo '👏👏👏✅✅✅ All gooood...'
