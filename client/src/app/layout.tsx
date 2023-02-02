@@ -19,7 +19,7 @@ export default function RootLayout({
         <main className="w-full h-screen bg-chat-bg flex">
           <Sidebar />
           <div className="w-full flex-grow">
-            <Header />
+            <Header channelName="Front-end developers" />
             {children}
           </div>
         </main>

@@ -4,6 +4,8 @@
 cd client/
 echo '👨🏼‍🚒 Styling, testing and building project before commit'
 
+npm run format
+
 # Check typings
 npm run check-types ||
 (

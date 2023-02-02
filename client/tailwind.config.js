@@ -14,6 +14,7 @@ module.exports = {
         primary: "#2F80ED",
         "user-bg": "#0B090C",
         secondary: "#E0E0E0",
+        "light-grey": "#828282",
       },
       boxShadow: {
         header: "0px 4px 4px rgba(0, 0, 0, 0.25)",
