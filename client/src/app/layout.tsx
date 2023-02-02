@@ -1,3 +1,4 @@
+"use client";
 import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -15,13 +16,14 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <main>
-          <Header />
+        <main className="w-full h-screen bg-chat-bg flex">
           <Sidebar />
-         {children}
+          <div className="w-full flex-grow">
+            <Header />
+            {children}
+          </div>
         </main>
-        
-        </body>
+      </body>
     </html>
   );
 }

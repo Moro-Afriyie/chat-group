@@ -15,6 +15,9 @@ module.exports = {
         "user-bg": "#0B090C",
         secondary: "#E0E0E0",
       },
+      boxShadow: {
+        header: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [],
