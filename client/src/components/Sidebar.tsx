@@ -6,7 +6,7 @@ interface ISidebarProps {}
 
 const Sidebar: React.FunctionComponent<ISidebarProps> = (props) => {
   return (
-    <aside className="bg-sidebar-bg overflow-y-auto text-white h-full flex flex-col  basis-[20.25rem] w-[20.25rem] flex-shrink-0">
+    <aside className="bg-dark overflow-y-auto text-white h-full flex flex-col  basis-[20.25rem] w-[20.25rem] flex-shrink-0">
       <div className="h-[3.75rem] w-full shadow-header text-lg font-bold px-[1.25rem] py-4 text-white justify-between flex items-center">
         <h1>Channels</h1>
         <div className="w-8 h-8 bg-chat-bg rounded-lg flex items-center justify-center text-2xl cursor-pointer">
